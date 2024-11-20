@@ -1,0 +1,94 @@
+body {
+    background-color: lightblue;
+}
+
+#root {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 250px;
+    max-height: 250px;
+    padding: 0;
+    margin: 0;
+    border: 3px slateblue solid;
+    border-radius: 1em;
+}
+figure {
+    padding: 0;
+    margin: 0;
+}
+.dep-header {
+    grid-area: header;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 1em;
+    width: 250px;
+    border: 3px solid blue;
+}
+.department {
+
+    border: 5px solid darkslateblue;
+    border-radius: 1em;
+    margin-bottom: 8px;
+    padding: 9px;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-template-areas: 
+    "header header header header"
+    ;
+    width: 95vw;
+}
+.card {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    padding: 15px;
+    /* opacity: 0; */
+    /* display: none; */
+    position: relative;
+    
+}
+
+.displayCard {
+    border: 8px solid slateblue;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* max-width: 600px; */
+    width: 500px;
+    padding: 15px;
+    /* transform: scale(2); */
+    z-index: 2;
+    background-color: aquamarine;
+    /* margin-top: 20vh;
+    margin-bottom: 20vh; */
+    margin-left: 30vw;
+    margin-right: 30vw;
+    position: absolute;
+    
+}
+button {
+    border: 5px solid blue;
+    border-radius: 1em;
+    background-color: dodgerblue;
+    color: aliceblue;
+    font-size: 18px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    color: aqua;
+}
+.hero {
+    font-size: 70px;
+}
